@@ -192,7 +192,7 @@ export class UploadEditor extends AbstractEditor {
         // eslint-disable-next-line no-console
         console.error('upload error', error, error.currentTarget)
       }
-      img.src = this.container.querySelector('a').href
+      img.src = this.container.querySelector('input').value
     }
     this.theme.afterInputReady(this.input)
   }
